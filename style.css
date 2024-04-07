@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#section-primary {
+  color: white;
+  background-color: #303030;
+  height: 50vh;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#section-secondary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  height: 15vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#section-tertiary {
+  padding: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    width: 50%;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#section-quaternary {
+  color: white;
+  background-color: #303030;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 508px;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: #c07212;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #section-primary {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #section-secondary {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #section-tertiary {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+
+    div {
+      width: 100%;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  #section-quaternary {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  input {
+    width: 90%;
+  }
+}
